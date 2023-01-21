@@ -35,8 +35,8 @@ function PosPage() {
     return <Container>        
         <h1>POS</h1>        
         <ButtonGroup aria-label="Basic example">            
-        <Button variant="secondary" onClick={() => { setSubMenu('reds') }}>Red Wine</Button>            
-        <Button variant="secondary" onClick={() => { setSubMenu('whites') }}>White Wine</Button>        
+        <Button variant="secondary" onClick={() => { setSubMenu('reds') }}>Reds</Button>            
+        <Button variant="secondary" onClick={() => { setSubMenu('whites') }}>Whites</Button>        
         </ButtonGroup>        
         <Row>            
             <Col>                
