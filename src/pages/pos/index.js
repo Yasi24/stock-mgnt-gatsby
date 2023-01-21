@@ -44,9 +44,18 @@ function PosPage() {
                 {wineTitles}
                 </Row>            
                 </Col>            
-                <Col sm={3}>                <h2>Cart </h2>                {cart.map((item, i) => {
-                    return <Row key={i}>                        <Col>{item.winery}</Col>                        <Col>{dummyPrice}</Col>                    </Row>                })}
-                <Row>                    
+                <Col sm={3}>                
+                <h2>Cart </h2>                
+                    {cart.map((item, i) => {
+                            return <Row key={i}>                        
+                                <Col>{item.winery}</Col>                        
+                                <Col>{dummyPrice}</Col>                    
+                            </Row>                
+                        })}
+                    <Row>                    
                     Total: {cart.length * dummyPrice} Baht
-                </Row>            </Col>        </Row>    </Container >}
+            </Row>            
+            </Col>        
+        </Row>    
+        </Container >}
 export default PosPage
